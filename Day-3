@@ -1,0 +1,124 @@
+1. Find the largest number in a list.
+Input: numbers = [12, 45, 7, 89, 23]
+Output: 89
+
+numbers = [12, 45, 7, 89, 23]
+largest = numbers[0]
+
+for num in numbers:
+  if num > largest:
+    largest = num
+
+print(largest)
+
+
+
+
+2. Find the smallest number in a list.
+Input: numbers = [12, 45, 7, 89, 23]
+Output: 7
+
+numbers = [12, 45, 7, 89, 23]
+smallest = numbers[0]
+
+for num in numbers:
+  if num < smallest:
+    smallest = num
+
+print(smallest)
+
+
+
+3: Count the even numbers in a list.
+Input: numbers = [12, 45, 7, 8, 20, 13, 16]
+Output: 4
+
+numbers = [12, 45, 7, 8, 20, 13, 16]
+count  = 0
+
+for num in numbers:
+  if num % 2 == 0:
+    count = count + 1
+
+print(count)
+
+
+
+4: Count the odd numbers in a list.
+Input: numbers = [12, 45, 7, 8, 20, 13, 16]
+Output: 3
+
+numbers = [12, 45, 7, 8, 20, 13, 16]
+count = 0
+
+for num in numbers:
+    if num % 2 != 0:
+        count = count + 1
+
+print(count)
+
+
+
+5: Find the second-largest number in a list (without sorting).
+Input: numbers = [12, 45, 7, 89, 23]
+Output: 45
+
+
+numbers = [12, 45, 7, 89, 23]
+largest = 0
+second_largest = 0
+
+for num in numbers:
+    if num > largest:
+        second_largest = largest
+        largest = num
+    elif num > second_largest and num != largest:
+        second_largest = num
+
+print(second_largest)
+
+
+
+numbers = [12, 45, 7, 89, 23]
+
+numbers.sort()
+print(numbers[-1]) → Largest number (89)  
+print(numbers[-2])→ Second-largest number (45)  
+
+
+6: Find the second-smallest number in a list (without sorting).
+Input: numbers = [12, 45, 7, 89, 23]
+Output: 12
+
+numbers = [12, 45, 7, 89, 23]
+
+smallest = float('inf')
+second_smallest = float('inf')
+
+for num in numbers:
+    if num < smallest:
+        second_smallest = smallest
+        smallest = num
+    elif num < second_smallest and num != smallest:
+        second_smallest = num
+
+print("Smallest:", smallest)
+print("Second smallest:", second_smallest)
+
+
+
+
+
+7: Find the smallest and second-smallest numbers in a list.
+Input: numbers = [12, 45, 7, 89, 23]
+
+Output:
+Smallest: 7
+Second smallest: 12
+
+numbers = [12, 45, 7, 89, 23]
+
+numbers.sort()
+
+print("Smallest:", numbers[0])
+print("Second smallest:", numbers[1])
