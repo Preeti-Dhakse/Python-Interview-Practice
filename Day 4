@@ -1,0 +1,39 @@
+1. Find the sum of all numbers in a list.
+Input: numbers = [10, 20, 30, 40, 50]
+Output: 150
+
+numbers = [10, 20, 30, 40, 50]
+sum = 0
+
+for num in numbers:
+  sum = sum + num
+
+print(sum)
+
+---------------------------------------------------------
+2: Count the positive numbers in a list.
+Input: numbers = [-5, 10, -2, 8, 0, 15, -1]
+Output: 3
+
+numbers = [-5, 10, -2, 8, 0, 15, -1]
+count = 0
+
+for num in numbers:
+    if num > 0:
+        count = count + 1
+
+print(count)
+
+----------------------------------------------------------------
+
+3: Count the negative numbers in a list.
+Input: numbers = [-5, 10, -2, 8, 0, 15, -1]
+Output: 3
+
+numbers = [-5, 10, -2, 8, 0, 15, -1]
+count = 0
+for num in numbers:
+  if num < 0:
+    count = count +1
+    
+print(count)
