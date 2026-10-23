@@ -1,0 +1,42 @@
+1: Find the average of all numbers in a list.
+Input: numbers = [10, 20, 30, 40, 50]
+Output: 30.0
+
+numbers = [10, 20, 30, 40, 50]
+total = 0
+
+for num in numbers:
+    total = total + num
+
+average = total / len(numbers)
+print(average)
+
+_________________________________________________________________________________________
+2: Find the smallest positive number in a list.
+Input: numbers = [-5, 10, -2, 8, 3, 15, -1]
+Output: 3
+
+numbers = [-5, 10, -2, 8, 3, 15, -1]
+
+smallest = float('inf')  # Start with infinity
+
+for num in numbers:
+    if num > 0 and num < smallest:  # Check positive and smaller number
+        smallest = num  # Update smallest number
+
+print(smallest)  # Output: 3
+
+___________________________________________________________________________________________
+3: Find the largest negative number in a list.
+Input: numbers = [-15, 10, -2, 8, -5, 15, -1]
+Output: -1
+
+numbers = [-15, 10, -2, 8, -5, 15, -1]
+
+largest = float('-inf')  # Start with negative infinity
+
+for num in numbers:
+    if num < 0 and num > largest:  # Check negative and larger number
+        largest = num  # Update largest negative number
+
+print(largest)  # Output: -1
