@@ -1,0 +1,51 @@
+Day 10 – Question 1
+Question: Find the largest digit in a number.
+Input: num = 58329
+
+num = 58329
+largest = 0
+
+while num > 0:
+    digit = num % 10
+
+    if digit > largest:
+        largest = digit
+
+    num = num // 10
+
+print(largest)  // 9
+__________________________________________________________________
+  
+Day 10 – Question 2
+Question: Find the smallest digit in a number.
+Input: num = 58329
+  
+ num = 58329
+smallest = 9
+
+while num > 0:
+    digit = num % 10
+
+    if digit < smallest:
+        smallest = digit
+
+    num = num // 10
+
+print(smallest) //2
+
+______________________________________________________________________
+  
+Day 10 – Question 3
+Question: Find the product of all digits in a number.
+Input: num = 234
+
+num = 234
+product = 1
+
+while num > 0:
+    digit = num % 10
+    product = product * digit
+    num = num // 10
+
+print(product) // 24
+  
